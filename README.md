@@ -5,17 +5,17 @@ Frequency Used  : 443 MHz<br>
 Power supply    : 3-5 v<br>
 Total cost      : 550 Indian Rupees(till date)<br>
 Project version : 0.2v<br>
-
-
-Components Used : Esp8266 wifi ardino board (2)
-                  LoRa-02 SX1278 443MHz     (2)
-                  Mono-pole Antena          (2)
-                  Small copper wire peices  (22)
-                  Solding machine
-                  Solding wire
-                  Ardino IDE
-                  Code
-
+<br>
+<br>
+Components Used : Esp8266 wifi ardino board (2)<br>
+                  LoRa-02 SX1278 443MHz     (2)<br>
+                  Mono-pole Antena          (2)<br>
+                  Small copper wire peices  (22)<br>
+                  Solding machine<br>
+                  Solding wire<br>
+                  Ardino IDE<br>
+                  Code<br>
+<br>
 Memory Used     : Sketch uses 261284 bytes (25%) of program storage space. Maximum is 1044464 bytes.
                   Global variables use 45966 bytes (56%) of dynamic memory, leaving 35954 bytes for local variables. Maximum is 81920 bytes.
 
