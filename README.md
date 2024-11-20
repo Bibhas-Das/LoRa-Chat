@@ -4,43 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoRa-Chat</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section-title {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .list {
-            margin-left: 20px;
-        }
-        .table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        .table th, .table td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
-        }
-        .table th {
-            background-color: #f4f4f4;
-        }
-        code {
-            background: #f9f9f9;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-    </style>
+    
 </head>
 <body>
 
