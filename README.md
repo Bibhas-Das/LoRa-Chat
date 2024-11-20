@@ -157,6 +157,34 @@
     <li>Buffer size is limited, so avoid heavy messaging.</li>
     <li>Buffer is cleared when the ESP8266 module is switched off.</li>
 </ol>
+
+<h2>Images:</h2>
+
+Esp8266 board
+![completemodule](https://github.com/user-attachments/assets/91eae124-e02d-4f30-8faf-24b821504304)
+
+Add espboard's json link in IDE's Preference
+![Screenshot from 2024-05-05 00-08-39](https://github.com/user-attachments/assets/9ce0174a-98d9-4a4b-9fd3-c3c9a8a38f6e)
+
+Search Lora Package and install
+![Screenshot from 2024-05-05 00-09-32](https://github.com/user-attachments/assets/e798f410-11fa-480c-8027-38a0691e9022)
+
+Then opne IDE and paste the code and connect the borads and upload
+
+After complete uploading
+
+connect 2 devices with 2 esp borad's wifi AP with password(Provided on code)
+wifi name(AP name) is your devices ID
+then open browser and search on url place "192.168.4.1" to open a chat box page
+then to connect write command "CONN:[ID]"  ex: CONN:1205, CONN:1206 to send message this device with this ID like phone call.
+
+![WhatsApp Image 2024-05-05 at 08 32 59_66408723](https://github.com/user-attachments/assets/4dc2a7ef-2182-4028-a4db-a526e92c3e21)
+
+![WhatsApp Image 2024-05-05 at 08 32 59_a8caf248](https://github.com/user-attachments/assets/6c30b995-1df5-4dea-b344-9872e9bb2cba)
+
+
+
+
 <p>Thank you!</p>
 
 <h2>Hashes:</h2>
