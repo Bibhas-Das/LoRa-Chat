@@ -93,7 +93,7 @@ How to use      : Every set of module has 3 main parts (Esp8266 wifi module, LoR
 
 
 // LoRa keys
-String MYID = "1205"; //It will constant ID initialy 4 digits
+String MYID = "1205"; //It will constant ID initialy 4 digits, That will be diffrent while uploading diffrent device
 String DESTINITIONID="0000";
 const short int MAX_MESSAGE_DIGITS=3;
 
@@ -101,8 +101,8 @@ const short int MAX_MESSAGE_DIGITS=3;
 const int FREQUENCY = 433000000;
 
 // WiFi configuration
-const char* ssid = "LoRa_1205";
-const char* password = "m3rbc4it71";
+const char* ssid = "LoRa_1205";// It should be change while upload on diffrent device
+const char* password = "12345678";
 
 short int ReceiveStatus=0;//variable that indicate tranmited message is received by receiver or not. 0 means not received.
 
