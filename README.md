@@ -1,10 +1,10 @@
 # LoRa-Chat
 Wireless communication using a low-power LoRa module operating on a radio frequency band, with a range of up to 15 km.
 
-Frequency Used  : 443 MHz\n
-Power supply    : 3-5 v\n
-Total cost      : 550 Indian Rupees(till date)\n
-Project version : 0.2v\n
+Frequency Used  : 443 MHz<br>
+Power supply    : 3-5 v<br>
+Total cost      : 550 Indian Rupees(till date)<br>
+Project version : 0.2v<br>
 
 
 Components Used : Esp8266 wifi ardino board (2)
