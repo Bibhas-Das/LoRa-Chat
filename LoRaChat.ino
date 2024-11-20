@@ -1,7 +1,6 @@
 /*
 Project Name    : LoRa Chatting
 Programmer Name : Bibhas Das
-Email Address   : bibhasdas1205@gmail.com
 Github Page     : https://github.com/Bibhas1205
 
 Starting Date   : 22-April-2024
