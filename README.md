@@ -1,196 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<body>
+Here's your content rewritten in **plain text format** while keeping the structure, lists, and tables readable — suitable for a `README.md` on GitHub or any documentation:
 
-<h1>LoRa-Chat</h1>
+---
 
-<p>Wireless communication using a low-power LoRa module operating on a radio frequency band, with a range of up to 15 km.</p>
+# **LoRa-Chat**
 
-<h2>Specifications:</h2>
-<p>
-    <strong>Frequency Used:</strong> 443 MHz<br>
-    <strong>Power Supply:</strong> 3-5 V<br>
-    <strong>Total Cost:</strong> 550 Indian Rupees (as of today)<br>
-    <strong>Project Version:</strong> 0.2v
-</p>
+Wireless communication using a low-power LoRa module operating on a radio frequency band, with a range of up to 15 km.
 
-<h2>Components Used:</h2>
-<ul>
-    <li>Esp8266 WiFi Arduino board (2)</li>
-    <li>LoRa-02 SX1278 443MHz (2)</li>
-    <li>Monopole Antenna (2)</li>
-    <li>Small copper wire pieces (22)</li>
-    <li>Soldering machine</li>
-    <li>Soldering wire</li>
-    <li>Arduino IDE</li>
-    <li>Code</li>
-</ul>
+---
 
-<h2>Memory Used:</h2>
-<p>
-    Sketch uses 261,284 bytes (25%) of program storage space. Maximum is 1,044,464 bytes.<br>
-    Global variables use 45,966 bytes (56%) of dynamic memory, leaving 35,954 bytes for local variables. Maximum is 81,920 bytes.
-</p>
+## **Specifications**
 
-<h2>Board Sector:</h2>
-<table border="1">
-    <tr>
-        <th>Parameter</th>
-        <th>Value</th>
-    </tr>
-    <tr>
-        <td>First Sector Index</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>Total Sector Count</td>
-        <td>65</td>
-    </tr>
-    <tr>
-        <td>Head Sector Count</td>
-        <td>16</td>
-    </tr>
-    <tr>
-        <td>Adjusted Sector Count</td>
-        <td>49</td>
-    </tr>
-    <tr>
-        <td>Adjusted Size</td>
-        <td>031000</td>
-    </tr>
-</table>
+* **Frequency Used:** 443 MHz
+* **Power Supply:** 3–5 V
+* **Total Cost:** ₹550 (as of today)
+* **Project Version:** 0.2v
 
-<h2>Advantages:</h2>
-<ul>
-    <li>One-time low investment</li>
-    <li>Can build its own network</li>
-    <li>Long-distance coverage</li>
-    <li>Low cost</li>
-    <li>Portable</li>
-    <li>User-friendly</li>
-    <li>Open source</li>
-    <li>Easy to build or set up</li>
-    <li>Independent from towers in rural places</li>
-</ul>
+---
 
-<h2>Disadvantages:</h2>
-<ul>
-    <li>Cheap design</li>
-    <li>Connectivity issues</li>
-    <li>Packet loss in the absence of a receiver</li>
-    <li>Low storage (fixed buffer size)</li>
-    <li>Cannot handle multiple messages simultaneously</li>
-    <li>Damage risk</li>
-    <li>Slower than ordinary shell phones (not confirmed)</li>
-    <li>Reserved keywords: <code>ACK</code>, <code>SEEN</code>. These cannot be used as they act as commands.</li>
-</ul>
+## **Components Used**
 
-<h2>Wire Connections:</h2>
-<table border="1">
-    <tr>
-        <th>ESP8266</th>
-        <th>LoRa-02 SX1278</th>
-        <th>Battery</th>
-    </tr>
-    <tr>
-        <td>3V</td>
-        <td>3.3V</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>G</td>
-        <td>GND</td>
-        <td>-Ve</td>
-    </tr>
-    <tr>
-        <td>D0</td>
-        <td>RST</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>D1</td>
-        <td>DI00</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>D2</td>
-        <td>DI01</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>D5</td>
-        <td>SCK</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>D6</td>
-        <td>MISO</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>D7</td>
-        <td>MOSI</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>D8</td>
-        <td>NSS</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>VIN</td>
-        <td>-</td>
-        <td>+Ve</td>
-    </tr>
-</table>
+* Esp8266 WiFi Arduino board (2)
+* LoRa-02 SX1278 443MHz (2)
+* Monopole Antenna (2)
+* Small copper wire pieces (22)
+* Soldering machine
+* Soldering wire
+* Arduino IDE
+* Code
 
-<h2>How to Use:</h2>
-<ol>
-    <li>Each module set contains three main components: ESP8266 WiFi module, LoRa module, and a mobile phone or computer with a web browser.</li>
-    <li>Power on the ESP8266 module connected to the LoRa module.</li>
-    <li>A WiFi SSID will appear, such as <code>LoRa_1234</code>. Here, <code>1234</code> is the module's ID.</li>
-    <li>Connect to the WiFi using the provided password.</li>
-    <li>Open any web browser and enter <code>192.168.4.1</code> in the URL bar.</li>
-    <li>Once the page loads, view messages by clicking the "Refresh" button.</li>
-    <li>To send a message, type <code>CONN:[Destination_ID]</code> and click send. Example: <code>CONN:1235</code>.</li>
-    <li>Send messages up to 999 characters (configurable). To message another user, enter a new ID using the <code>CONN</code> command.</li>
-    <li>Buffer size is limited, so avoid heavy messaging.</li>
-    <li>Buffer is cleared when the ESP8266 module is switched off.</li>
-</ol>
+---
 
-<h2>Images:</h2>
-<br>
-Esp8266 board<br>
+## **Memory Used**
+
+* Sketch uses 261,284 bytes (25%) of program storage space (Max: 1,044,464 bytes)
+* Global variables use 45,966 bytes (56%) of dynamic memory (Remaining: 35,954 bytes of 81,920 bytes)
+
+---
+
+## **Board Sector**
+
+| Parameter             | Value  |
+| --------------------- | ------ |
+| First Sector Index    | 0      |
+| Total Sector Count    | 65     |
+| Head Sector Count     | 16     |
+| Adjusted Sector Count | 49     |
+| Adjusted Size         | 031000 |
+
+---
+
+## **Advantages**
+
+* One-time low investment
+* Can build its own network
+* Long-distance coverage
+* Low cost
+* Portable
+* User-friendly
+* Open source
+* Easy to build or set up
+* Works without towers (ideal for rural areas)
+
+---
+
+## **Disadvantages**
+
+* Cheap design
+* Connectivity issues
+* Packet loss without a receiver
+* Low storage (fixed buffer size)
+* Cannot handle multiple messages at once
+* Damage risk
+* Slower than regular cell phones (not confirmed)
+* Reserved commands: `ACK`, `SEEN` (cannot be used as message content)
+
+---
+
+## **Wire Connections**
+
+| ESP8266 | LoRa-02 SX1278 | Battery |
+| ------- | -------------- | ------- |
+| 3V      | 3.3V           | -       |
+| G       | GND            | -Ve     |
+| D0      | RST            | -       |
+| D1      | DI00           | -       |
+| D2      | DI01           | -       |
+| D5      | SCK            | -       |
+| D6      | MISO           | -       |
+| D7      | MOSI           | -       |
+| D8      | NSS            | -       |
+| VIN     | -              | +Ve     |
+
+---
+
+## **How to Use**
+
+1. Each module includes: ESP8266, LoRa module, and a phone or computer with a web browser.
+2. Power on the ESP8266 with the LoRa module connected.
+3. A WiFi SSID will appear (e.g., `LoRa_1234`, where `1234` is the device ID).
+4. Connect to this WiFi using the password provided in the code.
+5. Open a browser and go to `192.168.4.1`.
+6. Click "Refresh" to view incoming messages.
+7. To connect and send messages, use the command `CONN:[Destination_ID]`, e.g., `CONN:1235`.
+8. You can send messages up to 999 characters (configurable).
+9. To message another device, use a new `CONN` command.
+10. Buffer size is limited; avoid flooding.
+11. Buffer clears when ESP8266 is powered off.
+
+---
+
+## **Images**
+
+**ESP8266 board**
 ![completemodule](https://github.com/user-attachments/assets/91eae124-e02d-4f30-8faf-24b821504304)
-<br>
-Add espboard's json link in IDE's Preference<br>
-![Screenshot from 2024-05-05 00-08-39](https://github.com/user-attachments/assets/9ce0174a-98d9-4a4b-9fd3-c3c9a8a38f6e)
-<br>
-Search Lora Package and install<br>
-![Screenshot from 2024-05-05 00-09-32](https://github.com/user-attachments/assets/e798f410-11fa-480c-8027-38a0691e9022)
-<br>
-Then opne IDE and paste the code and connect the borads and upload<br>
-<br>
-After complete uploading<br>
-<br>
-connect 2 devices with 2 esp borad's wifi AP with password(Provided on code)<br>
-wifi name(AP name) is your devices ID<br>
-then open browser and search on url place "192.168.4.1" to open a chat box page<br>
-then to connect write command "CONN:[ID]"  ex: CONN:1205, CONN:1206 to send message this device with this ID like phone call.<br>
-<br>
-![WhatsApp Image 2024-05-05 at 08 32 59_66408723](https://github.com/user-attachments/assets/4dc2a7ef-2182-4028-a4db-a526e92c3e21)
-<br>
-![WhatsApp Image 2024-05-05 at 08 32 59_a8caf248](https://github.com/user-attachments/assets/6c30b995-1df5-4dea-b344-9872e9bb2cba)
-<br>
 
-<p>Thank you!</p>
+**Add board JSON URL in Arduino IDE Preferences**
+![Screenshot](https://github.com/user-attachments/assets/9ce0174a-98d9-4a4b-9fd3-c3c9a8a38f6e)
 
-<h2>Hashes:</h2>
-<ul>
-    <li><strong>MD5:</strong> bc0f0587d534f39fa138c0255f33b4c9 <em>LoRaChat.ino</em></li>
-    <li><strong>SHA1:</strong> c9cf6797827e5e06791052cac00a4e8e57beb35a <em>LoRaChat.ino</em></li>
-    <li><strong>SHA256:</strong> da598e00e511eac93a5b5fea7b1bad909248c9a47ca043fd3e8d23b248b0b8e4 <em>LoRaChat.ino</em></li>
-</ul>
+**Install LoRa Library**
+![Screenshot](https://github.com/user-attachments/assets/e798f410-11fa-480c-8027-38a0691e9022)
 
-</body>
-</html>
+**Upload the code using Arduino IDE**
+
+* Connect two devices to ESP8266 WiFi APs
+* SSID is the device ID
+* Open browser → enter `192.168.4.1`
+* To message, use `CONN:ID` format (e.g., `CONN:1205`)
+
+**Sample Images**
+![Image 1](https://github.com/user-attachments/assets/4dc2a7ef-2182-4028-a4db-a526e92c3e21)
+![Image 2](https://github.com/user-attachments/assets/6c30b995-1df5-4dea-b344-9872e9bb2cba)
+
+---
+
+## **Hashes (LoRaChat.ino)**
+
+* **MD5:** bc0f0587d534f39fa138c0255f33b4c9
+* **SHA1:** c9cf6797827e5e06791052cac00a4e8e57beb35a
+* **SHA256:** da598e00e511eac93a5b5fea7b1bad909248c9a47ca043fd3e8d23b248b0b8e4
+
+---
+
+**Thank you!**
+
+---
+
+Would you like me to convert this into a proper `README.md` file directly?
