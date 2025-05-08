@@ -1,7 +1,3 @@
-Here's your content rewritten in **plain text format** while keeping the structure, lists, and tables readable — suitable for a `README.md` on GitHub or any documentation:
-
----
-
 # **LoRa-Chat**
 
 Wireless communication using a low-power LoRa module operating on a radio frequency band, with a range of up to 15 km.
@@ -111,14 +107,20 @@ Wireless communication using a low-power LoRa module operating on a radio freque
 
 ## **Images**
 
-**ESP8266 board**
-![completemodule](https://github.com/user-attachments/assets/91eae124-e02d-4f30-8faf-24b821504304)
+**ESP8266 board**  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/91eae124-e02d-4f30-8faf-24b821504304" alt="completemodule">
+</p>
 
-**Add board JSON URL in Arduino IDE Preferences**
-![Screenshot](https://github.com/user-attachments/assets/9ce0174a-98d9-4a4b-9fd3-c3c9a8a38f6e)
+**Add board JSON URL in Arduino IDE Preferences**  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9ce0174a-98d9-4a4b-9fd3-c3c9a8a38f6e" alt="IDE Preferences">
+</p>
 
-**Install LoRa Library**
-![Screenshot](https://github.com/user-attachments/assets/e798f410-11fa-480c-8027-38a0691e9022)
+**Install LoRa Library**  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e798f410-11fa-480c-8027-38a0691e9022" alt="LoRa install">
+</p>
 
 **Upload the code using Arduino IDE**
 
@@ -127,9 +129,13 @@ Wireless communication using a low-power LoRa module operating on a radio freque
 * Open browser → enter `192.168.4.1`
 * To message, use `CONN:ID` format (e.g., `CONN:1205`)
 
-**Sample Images**
-![Image 1](https://github.com/user-attachments/assets/4dc2a7ef-2182-4028-a4db-a526e92c3e21)
-![Image 2](https://github.com/user-attachments/assets/6c30b995-1df5-4dea-b344-9872e9bb2cba)
+**Sample Images**  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4dc2a7ef-2182-4028-a4db-a526e92c3e21" alt="WhatsApp Image 1">
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6c30b995-1df5-4dea-b344-9872e9bb2cba" alt="WhatsApp Image 2">
+</p>
 
 ---
 
@@ -142,7 +148,3 @@ Wireless communication using a low-power LoRa module operating on a radio freque
 ---
 
 **Thank you!**
-
----
-
-Would you like me to convert this into a proper `README.md` file directly?
